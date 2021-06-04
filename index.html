@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" value="">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+
+        <button onclick="come()">OK</button>
+        <p id="demo"></p>
+</form>
+
+    <!-- 2 та инпут йаратамиз ва шу инпутларга логин ва паролни киритамиз.
+    агар киритилган логин ва парол тогри болса браузерда 
+    сиз аккаунтингизга кирдингиз деган йозув чиксин -->
+
+    <script>
+        // let email = 'kodirov.sanzhar@bk.ru'
+
+        // let a = email.includes('@')
+        // console.log(a);
+
+        // let name = 'Sanjar';
+        
+        // console.log(name.length);
+
+    //    const email = document.querySelector('#email');
+    //    const name = document.querySelector('#name');
+    //    const demo = document.getElementById('demo');
+
+    //    function come(){
+
+    //         if (email.value.includes('@')){
+    //             console.log('You include your email');
+    //             demo.innerHTML = 'You include your email'
+    //         }else{
+    //             console.log('Write your email');
+    //             demo.innerHTML = 'Write your email'
+    //         }
+    //    }
+
+    const email = document.getElementById('email');
+    const name = document.getElementById('password');
+    const demo = document.getElementById('demo');
+
+    function come(){
+        if(email.value.includes('@') && password.value.length >= 6){
+            demo.innerHTML = 'You inter your email'
+        }else{
+            demo.innerHTML = 'Write your email or write your password more 6 letters'
+        }
+    }
+    </script>
+</body>
+</html>
